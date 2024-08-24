@@ -1,5 +1,9 @@
 body {
     font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 .container {
@@ -17,6 +21,50 @@ body {
     font-size: 24px;
     color: #F9FAF8;
     align-items: center;
+}
+
+.hero {
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    gap: 25px;
+}
+
+.hero-content {
+    max-width: 500px;
+    max-height: 300px;
+}
+
+.hero-button {
+    background-color: #3882f6;
+    width: 100px;
+    min-height: 30px;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder {
+    background-color: #9e9fa1;
+    color: #F9FAF8;
+    min-width: 450px;
+    min-height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero, .call-to-action, .quote, .info {
+    flex: auto;
+    min-height: 120px;
 }
 
 .link-left {
@@ -43,14 +91,56 @@ body {
 
 .items {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 24px;
 }
 
-.quote, .source {
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 200px;
+}
+
+.item-border {
+    border: 3px solid #3882f6;
+    border-radius: 5px;
+    width: 100px;
+    height:100px;
+}
+
+.hero, .quote, .source {
     display: flex;
     justify-content: center;
     align-items: center; 
+}
+
+.quote {
+    background-color: #E5E7EB;
+    
+}
+
+.citation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    padding: 48px;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    color:#1F2937;
+    max-width: 800px;
+}
+
+.source {
+    align-self: flex-end;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
 }
 
 .call-to-action {
@@ -64,7 +154,7 @@ body {
     justify-content: center;
     align-items: center;
     color: #E5E7EB;
-    height: 45px;
+    height: 68px;
 }
 
 ul {
